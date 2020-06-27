@@ -13,6 +13,8 @@ public class BasicController {
     @Autowired
     public RedisOperator redis;
 
+    public static final String REDIS_USER_TOKEN = "redis-user-token";
+
     public Integer[] getGuessULikeArray(Integer counts) {
         Integer[] guessIndexArray = new Integer[5];
 

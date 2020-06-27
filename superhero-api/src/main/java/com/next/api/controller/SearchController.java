@@ -29,7 +29,7 @@ public class SearchController extends BasicController {
     private StaffService staffService;
 
     @PostMapping("/list")
-    @ApiOperation(value = "猜你喜欢", notes ="猜你喜欢", httpMethod = "POST")
+    @ApiOperation(value = "搜索电影列表", notes ="搜索电影列表", httpMethod = "POST")
     public NEXTJSONResult list(
             @ApiParam(name = "keywords", value = "查询的名称，中文/英文", required = false)
             @RequestParam  String keywords,
